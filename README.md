@@ -43,12 +43,12 @@ class Iphone{
     + AtualizarPagina	
  }
 
-AppIternet--|>NavegadoInternet
+AppInternet--|>NavegadorInternet
 AppMusical--|>ReprodutorMusical
 AppTelefonico--|>AparelhoTelefonico
 
 
-Iphone--|>AppIternet
+Iphone--|>AppInternet
 Iphone--|>AppMusical
 Iphone--|>AppTelefonico
 
