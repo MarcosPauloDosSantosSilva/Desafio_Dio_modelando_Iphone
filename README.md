@@ -10,7 +10,7 @@ class Iphone{
       
   }
 
- class AppIternet{
+ class AppInternet{
  }
 
  class AppMusical{
@@ -36,7 +36,7 @@ class Iphone{
     + InciarCorreioVoz    
   }
 
- class NavegadoInternet{
+ class NavegadorInternet{
        <<interface>>
     + ExibirPagina
     + AdicionarNovaAba
