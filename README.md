@@ -5,34 +5,52 @@
 
 
 classDiagram
-   
-  class Iphone{
+
+class Iphone{  
       
   }
 
+ class AppIternet{
+ }
 
-  class interface ReprodutorMusical{
+ class AppMusical{
+ }
+
+ class AppTelefonico{
+ }
+
+
+
+
+  class ReprodutorMusical{
+       <<interface>>
     + Tocar
     + Pausar
     + Silenciar   
   }
 
-  class interface AparelhoTelefonico{
+  class AparelhoTelefonico{
+       <<interface>>
     + Ligar
     + Anteder
-    + InciarCorreioVoz
-    
+    + InciarCorreioVoz    
   }
 
- class inteface NavegadoInternet{
+ class NavegadoInternet{
+       <<interface>>
     + ExibirPagina
     + AdicionarNovaAba
     + AtualizarPagina	
  }
 
-Iphone"1" *-->"1" interface ReprodutorMusical
-Iphone"1" *-->"1" interface AparelhoTelefonico
-Iphone"1" *-->"1" inteface NavegadoInternet
+AppIternet--|>NavegadoInternet
+AppMusical--|>ReprodutorMusical
+AppTelefonico--|>AparelhoTelefonico
+
+
+Iphone--|>AppIternet
+Iphone--|>AppMusical
+Iphone--|>AppTelefonico
 
 
 ```
